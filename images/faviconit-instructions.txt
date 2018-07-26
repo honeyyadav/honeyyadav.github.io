@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-  	<title>IGU Blog</title>
-  	<link rel="stylesheet" type="text/css" href="https://honeyyadav.github.io/css/bootstrap.min.css">
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  	<link rel="shortcut icon" href="https://honeyyadav.github.io/images/favicon.ico">
+thanks for using faviconit!
+copy the files to your site and add this code inside the HTML <HEAD> tag:
+
+	<!-- ****** faviconit.com favicons ****** -->
+	<link rel="shortcut icon" href="https://honeyyadav.github.io/images/favicon.ico">
 	<link rel="icon" sizes="16x16 32x32 64x64" href="https://honeyyadav.github.io/images/favicon.ico">
 	<link rel="icon" type="image/png" sizes="196x196" href="https://honeyyadav.github.io/images/favicon-192.png">
 	<link rel="icon" type="image/png" sizes="160x160" href="https://honeyyadav.github.io/images/favicon-160.png">
@@ -24,21 +22,4 @@
 	<meta name="msapplication-TileColor" content="#FFFFFF">
 	<meta name="msapplication-TileImage" content="https://honeyyadav.github.io/images/favicon-144.png">
 	<meta name="msapplication-config" content="https://honeyyadav.github.io/images/browserconfig.xml">
-</head>
-<body>
-	<div class="container">
-		<h2 align="center">Study Material</h2>
-	</div>
-  	<div class="container">
-    	<div class="row">
-      		<button class="btn btn-block btn-primary col-sm-12 col-xs-12">
-        		Student Area
-      		</button>
-      		<button class="btn btn-block btn-primary col-sm-12 col-xs-12">
-        		Volunteer Area
-      		</button>
-      	</div>
-    </div>
-
-</body>
-</html>
+	<!-- ****** faviconit.com favicons ****** -->
