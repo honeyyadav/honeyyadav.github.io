@@ -1,0 +1,35 @@
+<html>
+<head>
+<link rel="stylesheet" href="form.css">
+<title>
+</title>
+</head>
+<!-- multistep form -->
+<form id="msform">
+  <!-- fieldsets -->
+  <fieldset>
+    <h2 class="fs-title">LOGIN REQUIRED</h2><br>
+    <input type="username" name="username" placeholder="username" id="text1" />
+    <input type="password" name="pass" placeholder="Password" id="text2" />
+    <input type="button" class="next action-button"  value="Login" onclick="javascript:validate()" />
+	<input type="reset" name="reset" class="next action-button" value="Clear" />
+  </fieldset>
+</form>
+<script type="text/javascript">
+function validate()
+{
+    if(   document.getElementById("text1").value == "btech"
+       && document.getElementById("text2").value == "0000" )
+    {
+        //alert( "validation succeeded" );
+        location.href="index2.html";
+    }
+    else
+    {
+        //alert( "validation failed" );
+        location.href="fail.html";
+    }
+}
+</script>
+<footer align="center">Designed by <a href="https://www.facebook.com/sachin.rohilla.1694">Sachin Rohilla</a> </footer>
+</html>
