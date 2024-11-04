@@ -2,7 +2,7 @@
 var config = {};
 
 config.hosts = {};
-config.hosts.domain = 'meet.jitsi';
+config.hosts.domain = 'rtc-us.cometchat-staging.com';
 
 var subdir = '';
 var subdomain = '';
@@ -12,9 +12,9 @@ if (subdir.startsWith('<!--')) {
 if (subdomain) {
     subdomain = subdomain.substring(0,subdomain.length-1).split('.').join('_').toLowerCase() + '.';
 }
-config.hosts.muc = 'muc.' + subdomain + 'meet.jitsi';
-config.bosh = 'https://connect.rtc.cometchat-staging.com:443/' + subdir + 'http-bind';
-config.websocket = 'wss://connect.rtc.cometchat-staging.com:443/' + subdir + 'xmpp-websocket';
+config.hosts.muc = 'muc.' + subdomain + 'rtc-us.cometchat-staging.com';
+config.bosh = 'https://xmpp.rtc-us.cometchat-staging.com:443/' + subdir + 'http-bind';
+config.websocket = 'wss://xmpp.rtc-us.cometchat-staging.com:443/' + subdir + 'xmpp-websocket';
 config.bridgeChannel = {
     preferSctp: true
 };
@@ -83,7 +83,7 @@ config.hideAddRoomButton = false;
 // Recording.
 //
 
-config.hiddenDomain = 'recorder.meet.jitsi';
+config.hiddenDomain = 'recorder.rtc-us.cometchat-staging.com';
 config.recordingService = {
     // Whether to enable file recording or not using the "service" defined by the finalizer in Jibri
     enabled: true,
