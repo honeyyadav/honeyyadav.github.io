@@ -1,0 +1,78 @@
+{
+  "hosts": { "domain": "rtc-us.cometchat-staging.com", "muc": "muc.rtc-us.cometchat-staging.com" },
+  "bosh": "https://xmpp.rtc-us.cometchat-staging.com:443/http-bind",
+  "websocket": "wss://xmpp.rtc-us.cometchat-staging.com:443/xmpp-websocket",
+  "bridgeChannel": { "preferSctp": true },
+  "resolution": 720,
+  "constraints": {
+    "video": {
+      "height": { "ideal": 720, "max": 720, "min": 180 },
+      "width": { "ideal": 1280, "max": 1280, "min": 320 }
+    }
+  },
+  "startVideoMuted": 10,
+  "startWithVideoMuted": false,
+  "flags": {
+    "sourceNameSignaling": true,
+    "sendMultipleVideoStreams": true,
+    "receiveMultipleVideoStreams": true
+  },
+  "enableNoAudioDetection": true,
+  "enableTalkWhileMuted": false,
+  "disableAP": false,
+  "audioQuality": { "stereo": false },
+  "startAudioOnly": false,
+  "startAudioMuted": 10,
+  "startWithAudioMuted": false,
+  "startSilent": false,
+  "enableOpusRed": false,
+  "disableAudioLevels": false,
+  "enableNoisyMicDetection": true,
+  "p2p": { "enabled": true },
+  "hideAddRoomButton": false,
+  "hiddenDomain": "recorder.rtc-us.cometchat-staging.com",
+  "recordingService": { "enabled": true, "sharingEnabled": false },
+  "liveStreaming": {
+    "enabled": false,
+    "dataPrivacyLink": "https://policies.google.com/privacy",
+    "helpLink": "https://jitsi.org/live",
+    "termsLink": "https://www.youtube.com/t/terms",
+    "validatorRegExpString": "^(?:[a-zA-Z0-9]{4}(?:-(?!$)|$)){4}"
+  },
+  "localRecording": {
+    "disable": false,
+    "notifyAllParticipants": false,
+    "disableSelfRecording": false
+  },
+  "analytics": {},
+  "enableCalendarIntegration": false,
+  "prejoinConfig": { "enabled": true, "hideDisplayName": false },
+  "welcomePage": { "disabled": false },
+  "enableClosePage": false,
+  "requireDisplayName": false,
+  "disableProfile": false,
+  "roomPasswordNumberOfDigits": false,
+  "transcription": {
+    "enabled": false,
+    "translationLanguages": [],
+    "translationLanguagesHead": ["en"],
+    "useAppLanguage": true,
+    "preferredLanguage": "en-US",
+    "disableStartForAll": false,
+    "autoCaptionOnRecord": false
+  },
+  "deploymentInfo": {},
+  "disableDeepLinking": false,
+  "videoQuality": { "av1": {}, "h264": {}, "vp8": {}, "vp9": {} },
+  "disableReactions": false,
+  "disablePolls": false,
+  "remoteVideoMenu": {
+    "disabled": false,
+    "disableKick": false,
+    "disableGrantModerator": false,
+    "disablePrivateChat": false
+  },
+  "e2eping": { "enabled": false },
+  "whiteboard": { "enabled": false },
+  "testing": { "enableAv1Support": false }
+}
